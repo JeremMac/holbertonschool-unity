@@ -5,6 +5,7 @@ using UnityEngine;
 public class PlayerController : MonoBehaviour {
 	
 	public Rigidbody player;
+	public Transform resPosition;
 	public float speed ;
 	public float jumpForce = 10f;
     public bool isGrounded = true;
@@ -28,6 +29,10 @@ public class PlayerController : MonoBehaviour {
 		{
 			player.AddForce(Vector3.up * jumpForce, ForceMode.Impulse);
 			isGrounded = false;
+		}
+		if (transform.position.y < -30)
+		{
+			transform.position = resPosition.position;
 		}
 	}
 
