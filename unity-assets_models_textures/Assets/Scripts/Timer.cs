@@ -1,10 +1,11 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 
 public class Timer : MonoBehaviour {
-	public Text TimerText;
+	public TextMeshProUGUI TimerText;
 	public float currentTime;
 	// Use this for initialization
 	void Start () {

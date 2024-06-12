@@ -1,11 +1,12 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 
 public class WinTrigger : MonoBehaviour {
 	public TimerTrigger timeStop;
-	public Text winText;
+	public TextMeshProUGUI winText;
 
 	// Use this for initialization
 	void Start () {
