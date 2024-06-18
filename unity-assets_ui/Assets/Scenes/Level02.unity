@@ -2017,6 +2017,23 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8967767890649901002, guid: 31426a979c94f6b4bb555862a32a7229,
+        type: 3}
+      propertyPath: m_fontAsset
+      value: 
+      objectReference: {fileID: 11400000, guid: 8767107860fc0f04fb5209e3254763c8,
+        type: 2}
+    - target: {fileID: 8967767890649901002, guid: 31426a979c94f6b4bb555862a32a7229,
+        type: 3}
+      propertyPath: m_sharedMaterial
+      value: 
+      objectReference: {fileID: -7898539056979977783, guid: 8767107860fc0f04fb5209e3254763c8,
+        type: 2}
+    - target: {fileID: 8967767890649901002, guid: 31426a979c94f6b4bb555862a32a7229,
+        type: 3}
+      propertyPath: m_hasFontAssetChanged
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects:
     - {fileID: 1011409819741782, guid: 31426a979c94f6b4bb555862a32a7229, type: 3}
