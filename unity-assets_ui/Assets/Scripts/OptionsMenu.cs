@@ -2,23 +2,29 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class OptionsMenu : MonoBehaviour
 {
-    int PreviousScene;
-    public void Awake()
-    {
-        DontDestroyOnLoad(gameObject);
-    }
-    public void Update()
-    {
-          if (SceneManager.GetActiveScene().name != "Options")
-        {
-            PreviousScene = SceneManager.GetActiveScene().buildIndex;
-        }
-    }
+    public Toggle isInverted;
+
+
     public void Back()
     {
-        SceneManager.LoadScene(PreviousScene);
+        SceneController.instance.LoadPreviousScene();
     }
+    public void Apply()
+    {
+        if (isInverted.isOn)
+        {
+            GameSettings.isInverted = true;
+            SceneController.instance.LoadPreviousScene();
+        }
+        else
+        {
+            GameSettings.isInverted = false;
+            SceneController.instance.LoadPreviousScene();
+        }
+    }
+    
 }
