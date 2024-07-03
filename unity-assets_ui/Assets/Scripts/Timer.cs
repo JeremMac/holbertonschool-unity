@@ -24,4 +24,9 @@ public class Timer : MonoBehaviour {
         int centiseconds = Mathf.FloorToInt((currentTime * 100) % 100);
         TimerText.text = string.Format("{0:0}.{1:00}.{2:00}", minutes, seconds, centiseconds);
 	}
+
+	public void Win(TextMeshProUGUI text1, TextMeshProUGUI text2)
+	{
+		text1.text = text2.text;
+	}
 }

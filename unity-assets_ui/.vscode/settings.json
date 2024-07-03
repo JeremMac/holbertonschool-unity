@@ -2,7 +2,6 @@
     "files.exclude": {
         "**/.DS_Store": true,
         "**/.git": true,
-        "**/.gitignore": true,
         "**/.gitmodules": true,
         "**/*.booproj": true,
         "**/*.pidb": true,
@@ -52,6 +51,5 @@
         "temp/": true,
         "Temp/": true
     },
-    "dotnet.preferCSharpExtension": true,
     "dotnet.defaultSolution": "unity-assets_ui.sln"
 }

@@ -42,7 +42,7 @@ public class CameraController : MonoBehaviour {
         }
         else
         {
-            _rotationY -= mouseX;
+            _rotationY += mouseX;
             _rotationX += mouseY;
         }
 
