@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.UIElements;
 
 public static class GameSettings
 {
@@ -56,7 +57,7 @@ public class CameraController : MonoBehaviour {
 		transform.localEulerAngles = _currentLocation;
 
 		transform.position = target.position - transform.forward * distanceFromTarget;
-		target.rotation = transform.rotation;
+		//target.rotation = transform.rotation;
 		//target.rotation = Quaternion.Euler(transform.rotation.x, 0f, 0f);
 	}
 }
