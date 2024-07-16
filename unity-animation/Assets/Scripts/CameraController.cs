@@ -51,13 +51,10 @@ public class CameraController : MonoBehaviour {
 
 		Vector3 nextRotation = new Vector3(_rotationX, _rotationY);
 
-		//Vector3 playerRotation = new Vector3(0, _rotationY);
 		_currentLocation = Vector3.SmoothDamp(_currentLocation, nextRotation, ref _smoothVelocity, smoothTime);
 
 		transform.localEulerAngles = _currentLocation;
 
 		transform.position = target.position - transform.forward * distanceFromTarget;
-		//target.rotation = transform.rotation;
-		//target.rotation = Quaternion.Euler(transform.rotation.x, 0f, 0f);
 	}
 }
