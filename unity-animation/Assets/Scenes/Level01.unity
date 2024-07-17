@@ -4775,7 +4775,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2121293682897535915, guid: 5921cf455fb69f54aa0b450a032daa3a, type: 3}
       propertyPath: m_ApplyRootMotion
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4170995544360269537, guid: 5921cf455fb69f54aa0b450a032daa3a, type: 3}
       propertyPath: player
