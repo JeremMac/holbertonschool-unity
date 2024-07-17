@@ -42,6 +42,7 @@ public class PlayerController : MonoBehaviour {
 		if(_groundedPlayer && _playerVelocity.y < 0)
 		{
 			_playerVelocity.y = 0f;
+			anim.SetBool("Jumping", false);
 		}
 		float horizontalInput = Input.GetAxis("Horizontal");
 		float verticalInput = Input.GetAxis("Vertical");
@@ -63,6 +64,7 @@ public class PlayerController : MonoBehaviour {
 		if(Input.GetButtonDown("Jump") && _groundedPlayer)
 		{
 			_playerVelocity.y += Mathf.Sqrt(_jumpHeight * -3.0f * _gravityValue);
+			anim.SetBool("Jumping", true);
 		}
 
 		_playerVelocity.y += _gravityValue * Time.deltaTime;
