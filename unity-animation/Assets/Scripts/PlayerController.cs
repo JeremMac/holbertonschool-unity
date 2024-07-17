@@ -1,9 +1,11 @@
-﻿using UnityEditor.Experimental.GraphView;
+﻿using Unity.VisualScripting;
+using UnityEditor.Experimental.GraphView;
 using UnityEngine;
 
 public class PlayerController : MonoBehaviour {
 	private CharacterController _controller;
 	public Transform resPosition;
+
 	[SerializeField] private float playerSpeed = 5f;
 	[SerializeField] private float _rotationSpeed = 10f;
 	[SerializeField] private Camera _followCamera;
@@ -11,7 +13,9 @@ public class PlayerController : MonoBehaviour {
 	private Vector3 _playerVelocity;
 	private bool _groundedPlayer;
 
-	[SerializeField] private float _jumpHeight = 10f;
+	public Animator anim;
+
+	[SerializeField] private float _jumpHeight = 3f;
 	[SerializeField] private float _gravityValue = -9.81f;
 
 	// Use this for initialization
@@ -31,13 +35,6 @@ public class PlayerController : MonoBehaviour {
 		}
 	}
 
-	private void OnCollisionEnter(Collision collision)
-	{
-		if (collision.gameObject.CompareTag("Ground"))
-		{
-			
-		}
-	}
 
 	void Movement()
 	{
@@ -60,6 +57,8 @@ public class PlayerController : MonoBehaviour {
 				transform.rotation = Quaternion.Slerp(transform.rotation, desiredRotation, _rotationSpeed * Time.deltaTime);
 			}
 
+		bool isRunning = movementDirection.magnitude > 0;
+        anim.SetBool("Running", isRunning);
 
 		if(Input.GetButtonDown("Jump") && _groundedPlayer)
 		{
