@@ -69,5 +69,14 @@ public class PlayerController : MonoBehaviour {
 
 		_playerVelocity.y += _gravityValue * Time.deltaTime;
 		_controller.Move(_playerVelocity * Time.deltaTime);
+
+		if (transform.position.y < -10)
+		{
+			anim.SetBool("isFalling", true);
+		}
+		else if(_groundedPlayer)
+		{
+			anim.SetBool("isFalling", false);
+		}
 	}
 }
