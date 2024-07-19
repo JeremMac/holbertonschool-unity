@@ -35,7 +35,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 5444981181099448785}
+  - {fileID: 8531133785169621710}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!33 &33607577678853356
@@ -127,7 +127,7 @@ MonoBehaviour:
   playerSpeed: 5
   _rotationSpeed: 10
   _followCamera: {fileID: 0}
-  anim: {fileID: 2121293682897535915}
+  anim: {fileID: 2343138644570908852}
   _jumpHeight: 3
   _gravityValue: -9.81
 --- !u!143 &4471105102593300374
@@ -170,7 +170,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   TimerText: {fileID: 0}
   currentTime: 0
---- !u!1001 &5483920846410219066
+--- !u!1001 &8209522841161504037
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
@@ -184,7 +184,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: e8fdfcd5a6acd364f94679c79541f2d3, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.914
+      value: -0.915
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: e8fdfcd5a6acd364f94679c79541f2d3, type: 3}
       propertyPath: m_LocalPosition.z
@@ -235,13 +235,13 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e8fdfcd5a6acd364f94679c79541f2d3, type: 3}
---- !u!95 &2121293682897535915 stripped
+--- !u!95 &2343138644570908852 stripped
 Animator:
   m_CorrespondingSourceObject: {fileID: 5866666021909216657, guid: e8fdfcd5a6acd364f94679c79541f2d3, type: 3}
-  m_PrefabInstance: {fileID: 5483920846410219066}
+  m_PrefabInstance: {fileID: 8209522841161504037}
   m_PrefabAsset: {fileID: 0}
---- !u!4 &5444981181099448785 stripped
+--- !u!4 &8531133785169621710 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: e8fdfcd5a6acd364f94679c79541f2d3, type: 3}
-  m_PrefabInstance: {fileID: 5483920846410219066}
+  m_PrefabInstance: {fileID: 8209522841161504037}
   m_PrefabAsset: {fileID: 0}
