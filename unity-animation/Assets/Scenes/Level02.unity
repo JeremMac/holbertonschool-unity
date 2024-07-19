@@ -1514,7 +1514,7 @@ MonoBehaviour:
   mouseSensitivity: 1
   smoothTime: 0.2
   target: {fileID: 1605549653}
-  distanceFromTarget: 4
+  distanceFromTarget: 6.25
   isInverted: 0
 --- !u!45 &380069004
 Skybox:
@@ -2115,6 +2115,10 @@ PrefabInstance:
     - target: {fileID: 1011409819741782, guid: 31426a979c94f6b4bb555862a32a7229, type: 3}
       propertyPath: m_IsActive
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1256518678964548, guid: 31426a979c94f6b4bb555862a32a7229, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 224456706253498692, guid: 31426a979c94f6b4bb555862a32a7229, type: 3}
       propertyPath: m_Pivot.x
@@ -4739,6 +4743,10 @@ PrefabInstance:
       propertyPath: resPosition
       value: 
       objectReference: {fileID: 1039938164}
+    - target: {fileID: 4170995544360269537, guid: 5921cf455fb69f54aa0b450a032daa3a, type: 3}
+      propertyPath: _followCamera
+      value: 
+      objectReference: {fileID: 380069001}
     - target: {fileID: 7862459442381084419, guid: 5921cf455fb69f54aa0b450a032daa3a, type: 3}
       propertyPath: TimerText
       value: 
