@@ -19,7 +19,7 @@ Those games are little games created as said above using unity:
 
 ## Platformer Game :
 
-      As stated above, **unity-animation** contains a platformer game.
+	As stated above, **unity-animation** contains a platformer game.
 
 * Gameplay:
 
