@@ -23,7 +23,8 @@ Those games are little games created as said above using unity:
 
 * Gameplay:
 
-      using the directional arrows of the keybord, you have to jump from platforms to platform. The space key will allow you to jump.
+      using the directional arrows of the keybord, you have to jump from platforms to platform. The space key
+      will allow you to jump.
 
 * Goal:
 
