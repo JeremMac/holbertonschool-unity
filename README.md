@@ -11,9 +11,8 @@ Those games are little games created as said above using unity:
 
 * **unity-animation**
 
-
-*It is a platformer 3D game project with all functional features.This version is the last and completed version of the game.*
+     *It is a platformer 3D game project with all functional features.This version is the last and completed version of the game.*
 
 * **unity_publishing**
 
-*This project is a labyrinth 3D game, completed and functionnal.*
+     *This project is a labyrinth 3D game, completed and functionnal.*
