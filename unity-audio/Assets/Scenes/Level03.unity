@@ -885,6 +885,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   pauseMenu: {fileID: 1454965179}
   isActive: 0
+  unpaused: {fileID: 3195795446612702577, guid: 27520a47905787f46a99b654f09f12bb, type: 2}
+  paused: {fileID: -7702007046124352314, guid: 27520a47905787f46a99b654f09f12bb, type: 2}
 --- !u!4 &347868977
 Transform:
   m_ObjectHideFlags: 0
@@ -3537,7 +3539,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1151895477}
   - component: {fileID: 1151895476}
-  - component: {fileID: 1151895475}
   - component: {fileID: 1151895474}
   - component: {fileID: 1151895473}
   - component: {fileID: 1151895472}
@@ -3593,14 +3594,6 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
---- !u!81 &1151895475
-AudioListener:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1151895471}
-  m_Enabled: 1
 --- !u!20 &1151895476
 Camera:
   m_ObjectHideFlags: 0

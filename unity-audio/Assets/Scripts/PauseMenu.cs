@@ -2,10 +2,14 @@ using System.Dynamic;
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
+using UnityEngine.Audio;
 public class PauseMenu : MonoBehaviour
 {
     public GameObject pauseMenu;
     public bool isActive = false;
+
+    public AudioMixerSnapshot unpaused;
+    public AudioMixerSnapshot paused;
     public void Update()
     {
         if(Input.GetKeyDown(KeyCode.Escape))
@@ -13,10 +17,12 @@ public class PauseMenu : MonoBehaviour
             if(isActive)
             {
                 Resume();
+                unpaused.TransitionTo(-20.00f);
             }
             else
             {
                 Pause();
+                paused.TransitionTo(0.00f);
             }
         }
     }
