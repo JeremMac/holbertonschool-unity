@@ -5,6 +5,8 @@ public class PlayerController : MonoBehaviour {
 	private CharacterController _controller;
 	public Transform resPosition;
 
+	public GameObject grassStep;
+
 	[SerializeField] private float playerSpeed = 5f;
 	[SerializeField] private float _rotationSpeed = 10f;
 	[SerializeField] private Camera _followCamera;
@@ -64,6 +66,11 @@ public class PlayerController : MonoBehaviour {
 		{
 			_playerVelocity.y += Mathf.Sqrt(_jumpHeight * -3.0f * _gravityValue);
 			anim.SetBool("Jumping", true);
+		}
+
+		if (!_groundedPlayer)
+		{
+			grassStep.SetActive(false);
 		}
 
 		_playerVelocity.y += _gravityValue * Time.deltaTime;

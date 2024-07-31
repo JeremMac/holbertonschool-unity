@@ -8,6 +8,8 @@ public class WinTrigger : MonoBehaviour {
 	public GameObject winCanvas;
 	public TextMeshProUGUI winCanvasText;
 	public Timer timer;
+	public GameObject BackGroundMusic;
+	public AudioSource VictoryMusic;
 
 	// Use this for initialization
 	void Start () {
@@ -32,6 +34,8 @@ public class WinTrigger : MonoBehaviour {
         	Cursor.lockState = CursorLockMode.None;
 			//winCanvasText.text = winText.text;
 			timer.Win(winCanvasText, winText);
+			BackGroundMusic.SetActive(false);
+			VictoryMusic.Play();
 		}
 	}
 }
