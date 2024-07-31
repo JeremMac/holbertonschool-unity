@@ -16,6 +16,7 @@ GameObject:
   - component: {fileID: 4471105102593300374}
   - component: {fileID: 7862459442381084419}
   - component: {fileID: 2358198821599212128}
+  - component: {fileID: 7826092823490544575}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -186,6 +187,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   grassstep: {fileID: 4830804737653739351}
+--- !u!81 &7826092823490544575
+AudioListener:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1419190161276032}
+  m_Enabled: 1
 --- !u!1 &4830804737653739351
 GameObject:
   m_ObjectHideFlags: 0
