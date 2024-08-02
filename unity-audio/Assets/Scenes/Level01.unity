@@ -3178,7 +3178,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 100000, guid: 277653743b7294140bd517cc28170ee6, type: 3}
       propertyPath: m_TagString
-      value: Rock
+      value: Grass
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 277653743b7294140bd517cc28170ee6, type: 3}
       propertyPath: m_RootOrder
@@ -5120,7 +5120,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 100000, guid: c7ac617a428c6874a9bf46232b857e1a, type: 3}
       propertyPath: m_TagString
-      value: Ground
+      value: Grass
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: c7ac617a428c6874a9bf46232b857e1a, type: 3}
       propertyPath: m_RootOrder
@@ -5254,6 +5254,10 @@ PrefabInstance:
       propertyPath: FallSound
       value: 
       objectReference: {fileID: 694493440}
+    - target: {fileID: 2358198821599212128, guid: 5921cf455fb69f54aa0b450a032daa3a, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4170995544360269537, guid: 5921cf455fb69f54aa0b450a032daa3a, type: 3}
       propertyPath: Fall
       value: 

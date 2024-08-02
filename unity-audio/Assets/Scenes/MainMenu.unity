@@ -826,6 +826,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 95ab2d45127e42b4c81f1e9f2da8b75d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  BGM: {fileID: 24100000, guid: 27520a47905787f46a99b654f09f12bb, type: 2}
+  SFX: {fileID: 24100000, guid: 27520a47905787f46a99b654f09f12bb, type: 2}
 --- !u!82 &771299982 stripped
 AudioSource:
   m_CorrespondingSourceObject: {fileID: 3934016843744104888, guid: 8fa9b5b504e5ad342aec80ed47622360, type: 3}
